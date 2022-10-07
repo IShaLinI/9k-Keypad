@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
+L 9k-Keypad-rescue:ATmega32U4-AU-MCU_Microchip_ATmega U1
 U 1 1 633FAC19
 P 4300 3900
 F 0 "U1" H 4300 1750 50  0000 C CNN
@@ -363,71 +363,7 @@ Wire Wire Line
 	2750 3050 3150 3050
 Connection ~ 2750 3050
 $Comp
-L random-keyboard-parts:Molex-0548190589 USB1
-U 1 1 63455F06
-P 4150 1250
-F 0 "USB1" V 4687 1217 60  0000 C CNN
-F 1 "Molex-0548190589" V 4581 1217 60  0000 C CNN
-F 2 "random-keyboard-parts:Molex-0548190589" H 4150 1250 60  0001 C CNN
-F 3 "" H 4150 1250 60  0001 C CNN
-	1    4150 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:VCC #PWR0111
-U 1 1 634588AD
-P 4700 950
-F 0 "#PWR0111" H 4700 800 50  0001 C CNN
-F 1 "VCC" H 4717 1123 50  0000 C CNN
-F 2 "" H 4700 950 50  0001 C CNN
-F 3 "" H 4700 950 50  0001 C CNN
-	1    4700 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 950  4700 950 
-$Comp
-L Device:Polyfuse_Small F1
-U 1 1 63459D1A
-P 4950 950
-F 0 "F1" V 4745 950 50  0000 C CNN
-F 1 "500mA" V 4836 950 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 5000 750 50  0001 L CNN
-F 3 "~" H 4950 950 50  0001 C CNN
-	1    4950 950 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4700 950  4850 950 
-Connection ~ 4700 950 
-$Comp
-L power:+5V #PWR0112
-U 1 1 6345BB95
-P 5150 950
-F 0 "#PWR0112" H 5150 800 50  0001 C CNN
-F 1 "+5V" H 5165 1123 50  0000 C CNN
-F 2 "" H 5150 950 50  0001 C CNN
-F 3 "" H 5150 950 50  0001 C CNN
-	1    5150 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 950  5150 950 
-$Comp
-L power:GND #PWR0113
-U 1 1 6345D417
-P 4550 1450
-F 0 "#PWR0113" H 4550 1200 50  0001 C CNN
-F 1 "GND" H 4555 1277 50  0000 C CNN
-F 2 "" H 4550 1450 50  0001 C CNN
-F 3 "" H 4550 1450 50  0001 C CNN
-	1    4550 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 1450 4550 1450
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX1
+L 9k-Keypad-rescue:MX-NoLED-MX_Alps_Hybrid MX1
 U 1 1 6345F39F
 P 6350 1200
 F 0 "MX1" H 6383 1423 60  0000 C CNN
@@ -451,7 +387,7 @@ $EndComp
 Wire Wire Line
 	6050 1350 6300 1350
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX2
+L 9k-Keypad-rescue:MX-NoLED-MX_Alps_Hybrid MX2
 U 1 1 634666B4
 P 6900 1200
 F 0 "MX2" H 6933 1423 60  0000 C CNN
@@ -475,7 +411,7 @@ $EndComp
 Wire Wire Line
 	6600 1350 6850 1350
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX3
+L 9k-Keypad-rescue:MX-NoLED-MX_Alps_Hybrid MX3
 U 1 1 634680B7
 P 7450 1200
 F 0 "MX3" H 7483 1423 60  0000 C CNN
@@ -499,7 +435,7 @@ $EndComp
 Wire Wire Line
 	7150 1350 7400 1350
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX4
+L 9k-Keypad-rescue:MX-NoLED-MX_Alps_Hybrid MX4
 U 1 1 6346EE45
 P 6350 1900
 F 0 "MX4" H 6383 2123 60  0000 C CNN
@@ -523,7 +459,7 @@ $EndComp
 Wire Wire Line
 	6050 2050 6300 2050
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX5
+L 9k-Keypad-rescue:MX-NoLED-MX_Alps_Hybrid MX5
 U 1 1 6346EE52
 P 6900 1900
 F 0 "MX5" H 6933 2123 60  0000 C CNN
@@ -547,7 +483,7 @@ $EndComp
 Wire Wire Line
 	6600 2050 6850 2050
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX6
+L 9k-Keypad-rescue:MX-NoLED-MX_Alps_Hybrid MX6
 U 1 1 6346EE5F
 P 7450 1900
 F 0 "MX6" H 7483 2123 60  0000 C CNN
@@ -571,7 +507,7 @@ $EndComp
 Wire Wire Line
 	7150 2050 7400 2050
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX7
+L 9k-Keypad-rescue:MX-NoLED-MX_Alps_Hybrid MX7
 U 1 1 63472CF4
 P 6350 2600
 F 0 "MX7" H 6383 2823 60  0000 C CNN
@@ -595,7 +531,7 @@ $EndComp
 Wire Wire Line
 	6050 2750 6300 2750
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX8
+L 9k-Keypad-rescue:MX-NoLED-MX_Alps_Hybrid MX8
 U 1 1 63472D01
 P 6900 2600
 F 0 "MX8" H 6933 2823 60  0000 C CNN
@@ -619,7 +555,7 @@ $EndComp
 Wire Wire Line
 	6600 2750 6850 2750
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX9
+L 9k-Keypad-rescue:MX-NoLED-MX_Alps_Hybrid MX9
 U 1 1 63472D0E
 P 7450 2600
 F 0 "MX9" H 7483 2823 60  0000 C CNN
@@ -726,8 +662,141 @@ Text GLabel 3050 3500 0    50   Input ~ 0
 D-
 Text GLabel 3050 3400 0    50   Input ~ 0
 D+
-Text GLabel 4450 1250 2    50   Input ~ 0
-D+
-Text GLabel 4450 1150 2    50   Input ~ 0
+Text GLabel 7950 4650 2    50   Input ~ 0
 D-
+Text GLabel 7950 4850 2    50   Input ~ 0
+D+
+$Comp
+L power:GND #PWR0113
+U 1 1 6345D417
+P 7350 5650
+F 0 "#PWR0113" H 7350 5400 50  0001 C CNN
+F 1 "GND" H 7355 5477 50  0000 C CNN
+F 2 "" H 7350 5650 50  0001 C CNN
+F 3 "" H 7350 5650 50  0001 C CNN
+	1    7350 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4150 8650 4150
+$Comp
+L power:+5V #PWR0112
+U 1 1 6345BB95
+P 8650 4150
+F 0 "#PWR0112" H 8650 4000 50  0001 C CNN
+F 1 "+5V" H 8665 4323 50  0000 C CNN
+F 2 "" H 8650 4150 50  0001 C CNN
+F 3 "" H 8650 4150 50  0001 C CNN
+	1    8650 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 63459D1A
+P 8450 4150
+F 0 "F1" V 8245 4150 50  0000 C CNN
+F 1 "500mA" V 8336 4150 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 8500 3950 50  0001 L CNN
+F 3 "~" H 8450 4150 50  0001 C CNN
+	1    8450 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 4150 8350 4150
+Wire Wire Line
+	7950 4150 8200 4150
+Connection ~ 8200 4150
+$Comp
+L power:VCC #PWR0111
+U 1 1 634588AD
+P 8200 4150
+F 0 "#PWR0111" H 8200 4000 50  0001 C CNN
+F 1 "VCC" H 8217 4323 50  0000 C CNN
+F 2 "" H 8200 4150 50  0001 C CNN
+F 3 "" H 8200 4150 50  0001 C CNN
+	1    8200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 63470282
+P 7350 4750
+F 0 "J1" H 7457 5617 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 7457 5526 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 7500 4750 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 7500 4750 50  0001 C CNN
+	1    7350 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7950 4950 2    50   Input ~ 0
+D+
+Text GLabel 7950 4750 2    50   Input ~ 0
+D-
+$Comp
+L power:GND #PWR0114
+U 1 1 63477728
+P 7050 5650
+F 0 "#PWR0114" H 7050 5400 50  0001 C CNN
+F 1 "GND" H 7055 5477 50  0000 C CNN
+F 2 "" H 7050 5650 50  0001 C CNN
+F 3 "" H 7050 5650 50  0001 C CNN
+	1    7050 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 6347D066
+P 8750 4350
+F 0 "R5" V 8554 4350 50  0000 C CNN
+F 1 "5k1" V 8645 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8750 4350 50  0001 C CNN
+F 3 "~" H 8750 4350 50  0001 C CNN
+	1    8750 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 6347ED0B
+P 8750 4450
+F 0 "R6" V 8650 4450 50  0000 C CNN
+F 1 "5k1" V 8550 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8750 4450 50  0001 C CNN
+F 3 "~" H 8750 4450 50  0001 C CNN
+	1    8750 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8850 4450 8900 4450
+Wire Wire Line
+	8900 4450 8900 4500
+Wire Wire Line
+	9050 4350 9050 4500
+$Comp
+L power:GND #PWR0115
+U 1 1 6348FD5E
+P 9050 4500
+F 0 "#PWR0115" H 9050 4250 50  0001 C CNN
+F 1 "GND" H 9055 4327 50  0000 C CNN
+F 2 "" H 9050 4500 50  0001 C CNN
+F 3 "" H 9050 4500 50  0001 C CNN
+	1    9050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 6348FD64
+P 8900 4500
+F 0 "#PWR0116" H 8900 4250 50  0001 C CNN
+F 1 "GND" H 8905 4327 50  0000 C CNN
+F 2 "" H 8900 4500 50  0001 C CNN
+F 3 "" H 8900 4500 50  0001 C CNN
+	1    8900 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 4350 9050 4350
+Wire Wire Line
+	7950 4350 8650 4350
+Wire Wire Line
+	8650 4450 7950 4450
 $EndSCHEMATC
